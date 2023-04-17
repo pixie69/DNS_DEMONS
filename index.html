@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Protocols</h2>
-
-                    <button>Stop & Wait <ion-icon name="git-network-outline"></ion-icon></button>
-                    <button>Go Back N <ion-icon name="git-network-outline"></ion-icon></button>
-                    <button>Selective Repeat <ion-icon name="git-network-outline"></ion-icon></button>
-                    
-                    <div class="gap1">
-                        <hr size="15">
-                    </div>
-
-                    <div class="input1">
-                        <input type="text">
-                    </div>
-
-                    <div class="gap2">
-                        <hr size="15">
-                    </div>
-
-                    <div class="input2">
-                        <input type="text">
-                    </div>
-                    
-                </form>
-            </div>
+      <div class="form-box">
+        <h2>Protocols</h2>
+        <div class="wrapper">
+          <div class="input-field">
+            <label>Enter the Data String: </label>
+            <input type="text" id="data-string"/>
+          </div>
         </div>
+        <div class="wrapper">
+          <div class="input-field">
+            <label>Enter the Packets with Fault: </label>
+            <input type="text" id="corrupted-packets"/>
+          </div>
+        </div>
+        <div class="wrapper-btn">
+          <button onclick="sendPackets()">Stop & Wait</button>
+        </div>
+      </div>
     </section>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <div id="animation-screen">
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
